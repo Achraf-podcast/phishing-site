@@ -5,7 +5,7 @@ username = ""
 password = ""
 users = []
 
-info = requests.get('http://earnforfree.pythonanywhere.com/database/users').text
+info = requests.get('http://127.0.0.1:5000/database/users').text
 
 for i in info:
     if i != '\n':
